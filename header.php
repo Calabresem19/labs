@@ -3,22 +3,19 @@
 
 	<head> 
 		<title>Willowbrook Labs</title>
-		<link rel="stylesheet" type="text/css" src="<?php echo get_template_directory_uri() ?>/static/stylsheets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/static/stylesheets/css/bootstrap.css">
+
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/style.css">
 	</head>
 	
 	<body>
 
 	<div class = "container">
-	
-		<header class = "site-header">
-			<img src="<?php echo get_template_directory_uri() ?>/static/images/WillowBrookLabsLogo.png">
-			<img src="<?php echo wp_get_attachment_url(get_theme_mod('lwp-footer-callout-image')) ?>>
 
-			<?php echo wp_get_attachment_url(get_theme_mod('WillowBrookLabsLogo.png')) ?>"
+	<header class = " row site-header">
+			<img class="col-4" src="<?php echo get_template_directory_uri() ?>/static/images/WillowBrookLabsLogo.png">
 
-
-
-			<nav class="site-nav">
+			<nav class="site-nav col-4 offset-6">
 				<?php
 
 				$args = array(
