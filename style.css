@@ -6,6 +6,62 @@ Version: 1.0
 */
 
 
+.site-header{
+
+}
+
+.site-header img{
+	display: inline;
+}
+
+.nav-menu {
+	margin-top: 20px;
+	float: right;
+
+}
+.nav-menu li {
+	list-style-type: none;
+	
+
+}
+.nav-menu a {
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+}
+
+div.contact-box {
+	border: solid;
+	border-color: rgb(201, 201, 201);
+		
+
+}
+
+div.quote-box{
+	border: solid;
+	border-color: rgb(201, 201, 201);
+		
+
+}
+
+div.info-boxes div {
+	margin-top: 50px;
+
+	height: 500px;
+
+}
+
+
+div.info-boxes h1{
+	color: rgb(201, 201, 201);
+
+}
+
+
+div.info-boxes p{
+	margin-top: 100px;
+}
+
 /** {
 	border : dotted;
 	border-color: red;
