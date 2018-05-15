@@ -3,8 +3,10 @@
 	get_header();
 ?>
 
-<div class = "row">
-	<h1 class="col-sm-4"> Test! </h1>
+
+<div class="animation row`">
+	
+	<img class="animation offset-4" src="<?php echo get_template_directory_uri() ?>/static/images/orange.gif">
 </div>
 
 <div class = "home-page-image row">
@@ -15,7 +17,7 @@
 <div class="row info-boxes">
 	
 	<div class=" col-4 offset-2 contact-box text-center"> 
-		<h1 class="contact-box-header">Service</h1>
+		<h1 class="contact-box-header">Services</h1>
 
 		<p class="text-center"> Willowbrook Labs offer a variety of digital solutions that help you make your organization more productive. Let us help build your technology infrastructure so you can get back to the important business of running your organization.  </p>
 	</div>
