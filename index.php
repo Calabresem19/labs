@@ -6,7 +6,7 @@
 
 <div class="animation row`">
 	
-	<img class="animation offset-4" src="<?php echo get_template_directory_uri() ?>/static/images/orange.gif">
+	<img class="animation offset-4" src="<?php echo get_template_directory_uri() ?>/static/images/WillowbrookLabsLogo.gif">
 </div>
 
 <div class = "home-page-image row">
