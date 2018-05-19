@@ -7,7 +7,7 @@ Version: 1.0
 
 
 .site-header{
-
+	background: black;
 }
 
 .site-header img{
@@ -22,12 +22,14 @@ Version: 1.0
 .nav-menu li {
 	list-style-type: none;
 	
+	
 
 }
 .nav-menu a {
 	text-decoration: none;
 	list-style-type: none;
-	color: black;
+	color: white;
+	font-family: Helvetica;
 }
 
 div.contact-box {
@@ -74,7 +76,6 @@ footer {
 }
 .nav-menu-footer l {
 	margin-top: 20px;
-	float: right;
 
 }
 .nav-menu-footer li {
@@ -84,6 +85,27 @@ footer {
 }
 .nav-menu-footer a {
 	text-decoration: underline;
+}
+
+.nav-menu{
+	padding-top: 15px;
+
+}
+body{
+
+	padding: 0px;
+
+}
+div.container-fluid{
+	padding: 0px;
+
+}
+
+img.logo{
+
+	padding-bottom: 10px; 
+	padding-top: 10px; 
+
 }
 /** {
 	border : dotted;

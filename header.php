@@ -12,12 +12,12 @@
 	
 	<body>
 
-	<div class = "container">
+	<div class = "container-fluid">
 
 	<header class = "site-header">
-			<img class="col-4" src="<?php echo get_template_directory_uri() ?>/static/images/WillowBrookLabsLogo.png">
+			<img class="logo offset-1" src="<?php echo get_template_directory_uri() ?>/static/images/WillowbrookLabsLogoSmall.gif">
 
-			<nav class="nav-menu">
+			<nav class="nav-menu col-3 offset-5">
 				<?php
 
 				$args = array(
