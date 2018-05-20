@@ -4,13 +4,9 @@
 ?>
 
 
-<div class="animation row`">
-	
-	<img class="animation offset-4" src="<?php echo get_template_directory_uri() ?>/static/images/WillowbrookLabsLogo.gif">
-</div>
 
 <div class = "home-page-image row">
-	<img class="jumbo center-block" src="<?php echo get_template_directory_uri() ?>/static/images/motherboardJumbo.jpg">
+	<img class="col-12" src="<?php echo get_template_directory_uri() ?>/static/images/motherboardJumbo.jpg">
 </div>
 
 
