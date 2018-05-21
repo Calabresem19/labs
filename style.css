@@ -7,7 +7,7 @@ Version: 1.0
 
 
 .site-header{
-	background: black;
+	background: #181c1f;
 }
 
 .site-header img{
@@ -107,6 +107,34 @@ img.logo{
 	padding-top: 10px; 
 
 }
+
+
+.center-block {
+    display: block;
+    margin: 0 auto;
+}
+div.statment{
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+div.statment h3{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+footer {
+	background: #181c1f;
+}
+
+footer a{
+	color: #8b939b;
+}
+footer p{
+	color: #8b939b;
+}
+
+
 /** {
 	border : dotted;
 	border-color: red;
