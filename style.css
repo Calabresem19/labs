@@ -83,9 +83,6 @@ footer {
 	
 
 }
-.nav-menu-footer a {
-	text-decoration: underline;
-}
 
 .nav-menu{
 	padding-top: 15px;
@@ -128,10 +125,11 @@ footer {
 }
 
 footer a{
-	color: #8b939b;
+	color: white;
+	text-decoration: none;
 }
 footer p{
-	color: #8b939b;
+	color: white;
 }
 
 
