@@ -1,15 +1,14 @@
-	<footer class = "site-footer">
-
-	</footer>
-
-	<div>
-	<footer class="row">
+	<footer class = "site-footer row">
 
 
-		<div class="col-2"> 
-			<p> Willowbrook Labs </p>
-			<p> Phone Number</p>
-			<p> xxx-xxx-xxxx</p>
+
+
+		<div class="social-media col-5 row "> 
+			<p class="Follow-Us col-1"> FOLLOW US | </p>
+			<ul class="social-media col-2">
+				<li> <a href="#">TWITTER</a> </li>
+				<li> <a href="#">INSTAGRAM</a> </li>
+			</ul>
 		</div>
 			<nav class=" col-2 offset-7 nav-menu-footer">
 				<?php

@@ -68,7 +68,9 @@ div.info-boxes p{
 footer {
 	
 	margin-top: 100px;
-
+}
+footer li {
+	color: white;	
 }
 .jumbo{
 	margin-top: 150px;
@@ -128,10 +130,25 @@ footer a{
 	color: white;
 	text-decoration: none;
 }
-footer p{
+footer ul.social-media li {
+	display: inline;
+	padding-left: 20px;	
+}
+footer ul.social-media li {
+	list-style-type: none;
+}
+footer ul.social-media li a{
+	color: pink;	
+}
+footer p.Follow-Us{
 	color: white;
+	text-decoration: none;
 }
 
+div.social-media{
+	display: inline;
+
+}
 
 /** {
 	border : dotted;
