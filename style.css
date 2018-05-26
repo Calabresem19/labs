@@ -130,27 +130,27 @@ footer a{
 	color: white;
 	text-decoration: none;
 }
-footer ul.social-media li {
+footer ul.social-media-list li {
 	display: inline;
-	padding-left: 20px;	
+	padding: 0px;
 }
-footer ul.social-media li {
+footer ul.social-media-list li {
 	list-style-type: none;
 }
-footer ul.social-media li a{
-	color: pink;	
+footer ul.social-media-list li a{
+	color: white;	
 }
-footer p.Follow-Us{
+footer p.Follow{
 	color: white;
 	text-decoration: none;
 }
 
-div.social-media{
-	display: inline;
 
+footer ul.social-media-list{
+	padding: 0px;
 }
 
-/** {
+* {
 	border : dotted;
 	border-color: red;
 
