@@ -3,10 +3,10 @@
 	get_header();
 ?>
 
-
+<div id="wrap">
 
 <div class = "home-page-image row">
-	<img class="col-12" src="<?php echo get_template_directory_uri() ?>/static/images/WillowBrookLabsMotherboard.png">
+	<img class="col-12 img-fluid" src="<?php echo get_template_directory_uri() ?>/static/images/WillowBrookLabsMotherboard.png">
 </div>
 
 
@@ -28,6 +28,8 @@
 		<h1 class=" quote-box-header text-center"> Get A Free Quote</h1>
 
 		<p class="text-center"> Feel free to reach out and get a quote </p>
+
+		<button class="Contact-Button button btn-warning" type="button">Contact Page</button>
 	</div>
 
 

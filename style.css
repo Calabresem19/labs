@@ -76,9 +76,8 @@ footer li {
 	margin-top: 150px;
 
 }
-.nav-menu-footer l {
-	margin-top: 20px;
-
+nav.nav-menu-footer  {
+	height: 60px;
 }
 .nav-menu-footer li {
 	list-style-type: none;
@@ -126,9 +125,15 @@ footer {
 	background: #181c1f;
 }
 
+
+footer p{
+	font-size: 15px;
+}
 footer a{
-	color: white;
 	text-decoration: none;
+	color: #8b939b;
+	padding-left: 5px;
+	font-size: 15px;
 }
 footer ul.social-media-list li {
 	display: inline;
@@ -138,22 +143,71 @@ footer ul.social-media-list li {
 	list-style-type: none;
 }
 footer ul.social-media-list li a{
-	color: white;	
+	color: #8b939b;
 }
 footer p.Follow{
 	color: white;
 	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 30px;
+	color: #8b939b;
 }
 
 
 footer ul.social-media-list{
 	padding: 0px;
 }
+footer ul.social-media-list a{
+	color: #8b939b;
+}
 
-* {
+html,
+body {
+  height: 100%;
+	margin: 0;
+  /* The html and body elements cannot have any padding or margin. */
+}
+div.container-fluid{
+
+  min-height: 100%;
+  margin-bottom: -60px;
+}
+
+/*#wrap {
+  min-height: 100%;
+  margin-bottom: -60px;
+}*/
+
+#footer,
+#push {
+  height: 60px;
+}
+
+div.social-media{
+	height: 60px;
+
+
+}
+div.menu{
+	height:50px;
+}
+nav div ul{
+	margin-bottom: 0px;
+}
+
+nav div ul li{
+	padding-top:10px;
+	
+}
+
+p.trademark{
+	
+	color: #8b939b;
+	padding-top: 10px
+
+}
+/* {
 	border : dotted;
 	border-color: red;
-
-
 
 }
