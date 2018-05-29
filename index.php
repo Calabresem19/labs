@@ -5,9 +5,7 @@
 
 <div id="wrap">
 
-<div class = "home-page-image row">
-	<img class="col-12 img-fluid" src="<?php echo get_template_directory_uri() ?>/static/images/WillowBrookLabsMotherboard.png">
-</div>
+	<img id="jumbo-image" class="img-fluid" src="<?php echo get_template_directory_uri() ?>/static/images/finalJumbo.png">
 
 
 <div class="row statment">
@@ -22,16 +20,14 @@
 		<h1 class="contact-box-header">Services</h1>
 
 		<p class="text-center "> Willowbrook Labs offer a variety of digital solutions that help you make your organization more productive. Let us help build your technology infrastructure so you can get back to the important business of running your organization.  </p>
+		<h1 id="about-us-link" class="text-center"><a href="#"> About Us<span style="color:#e29860;">&#10142</span></a> </h1> 
 	</div>
 
 	<div class=" col-4 offset-2 quote-box"> 
 		<h1 class=" quote-box-header text-center"> Get A Free Quote</h1>
 
 		<p class="text-center"> Feel free to reach out and get a quote </p>
-
-		<button class="Contact-Button button btn-warning" type="button">Contact Page</button>
-	</div>
-
+		<h1 id="contact-us-link" class="text-center"><a href="#"> Contact Us<span style="color:#e29860;">&#10142</span></a> </h1> 
 
 </div>
 

@@ -206,6 +206,46 @@ p.trademark{
 	padding-top: 10px
 
 }
+h1#contact-us-link{
+
+	color: black;
+	font-size: 25px;
+	padding-top: 146px	
+}
+h1#contact-us-link a{
+
+	text-decoration: underline;
+	color: black;
+}
+h1#contact-us-link a:hover{
+	text-decoration: none;
+}
+h1#about-us-link{
+
+	color: black;
+	font-size: 25px;
+	padding-top: 80px;
+}
+
+h1#about-us-link a{
+
+	text-decoration: underline;
+	color: black;
+}
+h1#about-us-link a:hover{
+	text-decoration: none;
+}
+
+img#jumbo-image{
+	width: 100%;
+
+}
+/*nav li a{
+
+	line-height:1.4
+
+}
+
 /* {
 	border : dotted;
 	border-color: red;
