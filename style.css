@@ -240,11 +240,25 @@ img#jumbo-image{
 	width: 100%;
 
 }
-/*nav li a{
 
-	line-height:1.4
+div#contact-form {
+	border: solid;
+	border-color: #c9c9c9;
 
 }
+
+div#contact-header {
+
+	padding-top: 100px;
+
+}
+div#contact-form-row{
+
+	padding-top: 50px;
+
+}
+
+
 
 /* {
 	border : dotted;
