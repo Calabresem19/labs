@@ -42,8 +42,6 @@ div.contact-box {
 div.quote-box{
 	border: solid;
 	border-color: rgb(201, 201, 201);
-		
-
 }
 
 div.info-boxes div {
@@ -258,7 +256,15 @@ div#contact-form-row{
 
 }
 
+div.form-divs{
+	padding-top: 40px;
 
+}
+
+div#message-input{
+	padding-top: 40px;
+	height: 100px;
+}
 
 /* {
 	border : dotted;
