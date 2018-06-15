@@ -3,7 +3,6 @@
 	get_header();
 ?>
 
-<div id="wrap">
 
 	<img id="jumbo-image" class="img-fluid" src="<?php echo get_template_directory_uri() ?>/static/images/finalJumbo.png">
 
@@ -29,6 +28,7 @@
 		<p class="text-center"> Feel free to reach out and get a quote </p>
 		<h1 id="contact-us-link" class="text-center"><a href="#"> Contact Us<span style="color:#e29860;">&#10142</span></a> </h1> 
 
+	</div>
 </div>
 
 

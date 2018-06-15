@@ -36,7 +36,7 @@
 					</div>	
 					<div id="message-input" class="col-7 ">
 						<div class="row">
-							<textarea rows="7" class="col-11" name="Message" ></textarea>
+							<textarea rows="12" class="col-11" name="Message" ></textarea>
 						</div>
 					</div>
 				</div>
@@ -45,6 +45,13 @@
 
 	</div>
 </div>
+
+<div class="row">
+	<div id="button-div" class="center-block">
+		<button id="send-button" class="btn btn-primary" type="button center">Send</button>	
+	</div>
+</div>
+
 
 
 <?php get_footer();?>

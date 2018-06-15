@@ -188,6 +188,7 @@ div.social-media{
 }
 div.menu{
 	height:50px;
+	
 }
 nav div ul{
 	margin-bottom: 0px;
@@ -195,7 +196,8 @@ nav div ul{
 
 nav div ul li{
 	padding-top:10px;
-	
+	padding-right: 15px;	
+	display: inline;
 }
 
 p.trademark{
@@ -257,7 +259,7 @@ div#contact-form-row{
 }
 
 div.form-divs{
-	padding-top: 40px;
+	padding-top: 60px;
 
 }
 
@@ -266,7 +268,18 @@ div#message-input{
 	height: 100px;
 }
 
-/* {
+div#email-div{
+	padding-bottom: 100px;
+}
+
+
+div#button-div{
+	
+	padding-top: 50px;
+
+}
+
+* {
 	border : dotted;
 	border-color: red;
 
