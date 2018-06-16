@@ -284,6 +284,14 @@ h1#about-us-link{
 
 }
 
+body{
+	min-width:1000px;        /* Suppose you want minimum width of 1000px */
+	width: auto !important;  /* Firefox will set width as auto */
+	width:1000px; 
+
+}
+
+
 
 /* {
 	border : dotted;
