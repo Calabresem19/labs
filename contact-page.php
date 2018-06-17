@@ -1,4 +1,4 @@
-<?php /* Template Name: CustomPageT1 */ ?>
+<?php /* Template Name: Contact*/ ?>
 
 
 <?php
@@ -18,7 +18,7 @@
 		</div>
 		<div class="row">
 
-			<form class="col-12">
+			<form action="#" method="post" id="form1" class="col-12">
 				<div class="row">
 					<div class="col-5">
 						<div id="name-div" class="form-divs">
@@ -48,7 +48,7 @@
 
 <div class="row">
 	<div id="button-div" class="center-block">
-		<button id="send-button" class="btn btn-primary" type="button center">Send</button>	
+		<button id="send-button" form="form1" class="btn btn-primary" type="button center">Send</button>	
 	</div>
 </div>
 
