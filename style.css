@@ -291,8 +291,13 @@ body{
 
 }
 
-
-
+#article{
+	padding-top: 50px;
+}
+#article-title{
+	font-family: bold;
+	font-size: 4em;
+}
 /* {
 	border : dotted;
 	border-color: red;
