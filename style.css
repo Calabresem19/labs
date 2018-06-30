@@ -298,6 +298,19 @@ body{
 	font-family: bold;
 	font-size: 4em;
 }
+
+div.row-for-top-three {
+
+	padding-top: 100px;
+}
+
+div.top-three-posts {
+	margin-right: 10px;
+	border: solid;
+
+}
+
+
 /* {
 	border : dotted;
 	border-color: red;
