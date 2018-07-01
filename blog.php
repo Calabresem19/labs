@@ -17,13 +17,16 @@
 			'orderby' => 'data'
 		    );
 
+	
 		    $post_query = new WP_Query($args);
 			if($post_query->have_posts() ) {
 			  while($post_query->have_posts() ) {
 			    $post_query->the_post();
 
 				if ($post_query->current_post == 0){ ?>
+					<?php the_post_thumbnail();?>
 					<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+					<p> <?php the_excerpt(); ?></p>
 		
 				<?php }
 
@@ -49,8 +52,9 @@
 						    $post_query->the_post();
 
 							if ($post_query->current_post == 1){ ?>
+								<?php the_post_thumbnail();?>
 								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					
+								<p> <?php the_excerpt(); ?></p>
 							<?php }
 
 						    ?>
@@ -78,8 +82,9 @@
 						    $post_query->the_post();
 
 							if ($post_query->current_post == 2){ ?>
+								<?php the_post_thumbnail();?>
 								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					
+								<p> <?php the_excerpt(); ?></p>
 							<?php }
 
 						    ?>
@@ -90,6 +95,33 @@
 		?>
 		</div>
 	</div>
+</div>
+<div class="row">
+	<div class="lower-posts offset-5">
+		<?php
+				    $args = array(
+						'post_type' => 'post',
+						'orderby' => 'data'
+					    );
+
+					    $post_query = new WP_Query($args);
+						if($post_query->have_posts() ) {
+						  while($post_query->have_posts() ) {
+						    $post_query->the_post();
+
+							if ($post_query->current_post > 2){ ?>
+								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+					
+							<?php }
+
+						    ?>
+
+						    <?php
+							  }
+						}
+		?>
+
+		</div>
 
 </div>
 

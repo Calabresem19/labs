@@ -307,9 +307,12 @@ div.row-for-top-three {
 div.top-three-posts {
 	margin-right: 10px;
 	border: solid;
+	border-color: #cbcbcb;
 
 }
-
+div.top-three-posts h2 a  {
+	color: black;
+}
 
 /* {
 	border : dotted;
