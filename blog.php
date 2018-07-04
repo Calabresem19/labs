@@ -96,8 +96,9 @@
 		</div>
 	</div>
 </div>
+<hr>
 <div class="row">
-	<div class="lower-posts offset-5">
+	<div class="lower-posts ">
 		<?php
 				    $args = array(
 						'post_type' => 'post',
@@ -107,11 +108,14 @@
 					    $post_query = new WP_Query($args);
 						if($post_query->have_posts() ) {
 						  while($post_query->have_posts() ) {
-						    $post_query->the_post();
-
-							if ($post_query->current_post > 2){ ?>
+						    $post_query->the_post();?>
+							<?php if ($post_query->current_post > 2){ ?>
+								<div class="col-8 center-block Lower-post">
 								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					
+								<?php the_excerpt();
+									//the_post_thumbnail();	
+								?>
+								</div>
 							<?php }
 
 						    ?>
@@ -120,8 +124,7 @@
 							  }
 						}
 		?>
-
-		</div>
+	</div>
 
 </div>
 
