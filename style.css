@@ -314,6 +314,13 @@ div.top-three-posts h2 a  {
 	color: black;
 }
 
+
+div.lower-post{
+
+	width: 0;
+
+}
+
 div.lower-post-image-div img{
 	
 
@@ -324,9 +331,18 @@ div.title-and-excerpt {
 	margin-right: 0px;
 
 }
+hr#lower-post-bottom {
 
+	height: 1px;
+	width: 100%;
 
-* {
+}
+
+hr#upper-post-separator{
+	border-color: black;
+	width: 75%;
+}
+/* {
 	border : dotted;
 	border-color: red;
 

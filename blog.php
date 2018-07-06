@@ -96,9 +96,8 @@
 		</div>
 	</div>
 </div>
-<hr>
-<div class="row">
-	<div class="lower-posts ">
+<hr id="upper-post-separator">
+<div class="row lower-posts">
 		<?php
 				    $args = array(
 						'post_type' => 'post',
@@ -110,16 +109,18 @@
 						  while($post_query->have_posts() ) {
 						    $post_query->the_post();?>
 							<?php if ($post_query->current_post > 2){ ?>
-								<div class="col-8 center-block Lower-post row">
-										<h2 class="headingTopThree col-1"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-										<?php the_excerpt(); ?>
-										<div class=" col-2 lower-post-image-div"><a href="<?php the_permalink(); ?>">
-										<?php	
+								<div class="col-8 offset-2 Lower-post row">
+										<div class="col-8">
+											<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+											<?php the_excerpt(); ?>
+										</div>
+										<div class=" col-4 lower-post-image-div"><a href="<?php the_permalink(); ?>">
+											<?php	
 											set_post_thumbnail_size( 250, 250 ); 
 											the_post_thumbnail();	
 										?>
 										</a></div>
-									<hr>	
+								<hr id="lower-post-bottom">
 								</div>
 							<?php }
 
@@ -129,7 +130,6 @@
 							  }
 						}
 		?>
-	</div>
 
 </div>
 
