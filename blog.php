@@ -110,11 +110,16 @@
 						  while($post_query->have_posts() ) {
 						    $post_query->the_post();?>
 							<?php if ($post_query->current_post > 2){ ?>
-								<div class="col-8 center-block Lower-post">
-								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-								<?php the_excerpt();
-									//the_post_thumbnail();	
-								?>
+								<div class="col-8 center-block Lower-post row">
+										<h2 class="headingTopThree col-1"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+										<?php the_excerpt(); ?>
+										<div class=" col-2 lower-post-image-div"><a href="<?php the_permalink(); ?>">
+										<?php	
+											set_post_thumbnail_size( 250, 250 ); 
+											the_post_thumbnail();	
+										?>
+										</a></div>
+									<hr>	
 								</div>
 							<?php }
 

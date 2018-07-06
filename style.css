@@ -314,7 +314,19 @@ div.top-three-posts h2 a  {
 	color: black;
 }
 
-/* {
+div.lower-post-image-div img{
+	
+
+
+}
+
+div.title-and-excerpt {
+	margin-right: 0px;
+
+}
+
+
+* {
 	border : dotted;
 	border-color: red;
 

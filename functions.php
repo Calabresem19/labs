@@ -19,34 +19,16 @@ function test_func() {
 
 }
 
+add_theme_support( 'post-thumbnails' );
 
 
-function grapPostFunc() {
-					    $args = array(
-						'post_type' => 'post',
-						'orderby' => 'data'
-					    );
-
-					    $post_query = new WP_Query($args);
-						if($post_query->have_posts() ) {
-						  while($post_query->have_posts() ) {
-						    $post_query->the_post();
-
-							if ($post_query->current_post == 2){ ?>
-								<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					
-							<?php }
-
-						    ?>
-
-						    <?php
-							  }
-						}
 
 
-}
-	
-
+// Function for shirtiking excerpt is the 4 lines below
+function custom_excerpt_length( $length ) {
+        return 30;
+    }
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 
