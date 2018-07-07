@@ -342,6 +342,24 @@ hr#upper-post-separator{
 	border-color: black;
 	width: 75%;
 }
+
+div.Lower-post h2 a{
+	text-decoration: none;	
+	color: #373a3c;;
+
+}
+div.Lower-post h2 a:hover{
+	color: black;
+}
+div.top-three-posts h2 a{
+	text-decoration: none;	
+	color: #373a3c;;
+
+}
+div.top-three-posts h2 a:hover{
+	color: black;
+
+}
 /* {
 	border : dotted;
 	border-color: red;

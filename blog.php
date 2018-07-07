@@ -24,7 +24,11 @@
 			    $post_query->the_post();
 
 				if ($post_query->current_post == 0){ ?>
-					<?php the_post_thumbnail();?>
+					
+					<?php set_post_thumbnail_size( 250, 250 ); 
+					the_post_thumbnail();?>
+
+
 					<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 					<p> <?php the_excerpt(); ?></p>
 		
@@ -52,7 +56,9 @@
 						    $post_query->the_post();
 
 							if ($post_query->current_post == 1){ ?>
-								<?php the_post_thumbnail();?>
+								<?php set_post_thumbnail_size( 250, 250 ); 
+								the_post_thumbnail();?>
+
 								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 								<p> <?php the_excerpt(); ?></p>
 							<?php }
@@ -82,7 +88,8 @@
 						    $post_query->the_post();
 
 							if ($post_query->current_post == 2){ ?>
-								<?php the_post_thumbnail();?>
+								<?php set_post_thumbnail_size( 250, 250 ); 
+								the_post_thumbnail();?>
 								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 								<p> <?php the_excerpt(); ?></p>
 							<?php }
