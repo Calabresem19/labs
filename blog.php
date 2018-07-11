@@ -9,106 +9,127 @@
 
 
 <div class="row row-for-top-three ">
-	<div class="top-three-posts offset-1  col-3 ">
-		<div class="row">
-			<?php
-		    $args = array(
-			'post_type' => 'post',
-			'orderby' => 'data'
-		    );
+	<div class="col-10 offset-1 row">
+		<div class="top-three-posts col-4 ">
+			<div class="row">
+				<?php
+			    $args = array(
+				'post_type' => 'post',
+				'orderby' => 'data'
+			    );
 
-	
-		    $post_query = new WP_Query($args);
-			if($post_query->have_posts() ) {
-			  while($post_query->have_posts() ) {
-			    $post_query->the_post();
-
-				if ($post_query->current_post == 0){ ?>
-					<div class="row">					
-						<div class=" center-block ">
-							<?php set_post_thumbnail_size( 250, 250 ); 
-							the_post_thumbnail();?>
-						</div>
-
-						<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-						<div class="col-12"> 
-							<?php the_excerpt(); ?>
-						</div>
-					</div>
 		
-				<?php }
+			    $post_query = new WP_Query($args);
+				if($post_query->have_posts() ) {
+				  while($post_query->have_posts() ) {
+				    $post_query->the_post();
 
-			    ?>
+					if ($post_query->current_post == 0){ ?>
+						<div class="row">					
+							<div class=" center-block ">
+								<?php set_post_thumbnail_size( 250, 250 ); 
+								the_post_thumbnail();?>
+							</div>
 
-			    <?php
-				  }
-			}
-		?>
+							<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+							<div class="col-10 offset-1"> 
+								<?php the_excerpt(); ?>
+							</div>
+						</div>
+			
+					<?php }
+
+				    ?>
+
+				    <?php
+					  }
+				}
+			?>
+			</div>
 		</div>
-	</div>
-	<div class="top-three-posts col-3 ">
-		<div class="row">
+		<div class="top-three-posts col-4 ">
+			<div class="row">
+				<?php
+						    $args = array(
+							'post_type' => 'post',
+							'orderby' => 'data'
+						    );
+
+						    $post_query = new WP_Query($args);
+							if($post_query->have_posts() ) {
+							  while($post_query->have_posts() ) {
+							    $post_query->the_post();
+
+								if ($post_query->current_post == 1){ ?>
+								<div class="row">					
+										<div class=" center-block ">
+											<?php set_post_thumbnail_size( 250, 250 ); 
+											the_post_thumbnail();?>
+										</div>
+
+									<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+									<div class="col-10 offset-1"> 
+										<?php the_excerpt(); ?>
+									</div>
+								</div>
+								<?php }
+
+							    ?>
+
+							    <?php
+								  }
+							}
+						?>
+
+
+			</div>
+		</div>
+		<div class="top-three-posts col-4 ">
+
+			<div class="row">
 			<?php
 					    $args = array(
-						'post_type' => 'post',
-						'orderby' => 'data'
-					    );
+							'post_type' => 'post',
+							'orderby' => 'data'
+						    );
 
-					    $post_query = new WP_Query($args);
-						if($post_query->have_posts() ) {
-						  while($post_query->have_posts() ) {
-						    $post_query->the_post();
+						    $post_query = new WP_Query($args);
+							if($post_query->have_posts() ) {
+							  while($post_query->have_posts() ) {
+							    $post_query->the_post();
 
-							if ($post_query->current_post == 1){ ?>
-								<?php set_post_thumbnail_size( 250, 250 ); 
-								the_post_thumbnail();?>
+								if ($post_query->current_post == 2){ ?>
+								<div class="row">					
+										<div class=" center-block ">
+											<?php set_post_thumbnail_size( 250, 250 ); 
+											the_post_thumbnail();?>
+										</div>
 
-								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-								<p> <?php the_excerpt(); ?></p>
-							<?php }
+									<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-						    ?>
+									<div class="col-10 offset-1"> 
+										<?php the_excerpt(); ?>
+									</div>
+								</div>
+								<?php }
 
-						    <?php
-							  }
-						}
-					?>
+							    ?>
 
-
+							    <?php
+								  }
+							}
+			?>
+			</div>
 		</div>
-	</div>
-	<div class="top-three-posts col-3 ">
-
-		<div class="row">
-		<?php
-				    $args = array(
-						'post_type' => 'post',
-						'orderby' => 'data'
-					    );
-
-					    $post_query = new WP_Query($args);
-						if($post_query->have_posts() ) {
-						  while($post_query->have_posts() ) {
-						    $post_query->the_post();
-
-							if ($post_query->current_post == 2){ ?>
-								<?php set_post_thumbnail_size( 250, 250 ); 
-								the_post_thumbnail();?>
-								<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-								<p> <?php the_excerpt(); ?></p>
-							<?php }
-
-						    ?>
-
-						    <?php
-							  }
-						}
-		?>
-		</div>
+	</div>	
+</div>
+<div class= "upper-post-separator-div row">
+	<div class="col-10 offset-1 row">
+		<hr id="upper-post-separator" class="upper-post-separator col-12 ">
 	</div>
 </div>
-<hr id="upper-post-separator">
 <div class="row lower-posts">
 		<?php
 				    $args = array(

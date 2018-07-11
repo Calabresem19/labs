@@ -305,7 +305,6 @@ div.row-for-top-three {
 }
 
 div.top-three-posts {
-	margin-right: 10px;
 	border: solid;
 	border-color: #cbcbcb;
 
@@ -340,7 +339,8 @@ hr#lower-post-bottom {
 
 hr#upper-post-separator{
 	border-color: black;
-	width: 75%;
+	overflow: hidden;
+	padding: 0px;
 }
 
 div.Lower-post h2 a{
