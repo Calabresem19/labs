@@ -24,13 +24,18 @@
 			    $post_query->the_post();
 
 				if ($post_query->current_post == 0){ ?>
-					
-					<?php set_post_thumbnail_size( 250, 250 ); 
-					the_post_thumbnail();?>
+					<div class="row">					
+						<div class=" center-block ">
+							<?php set_post_thumbnail_size( 250, 250 ); 
+							the_post_thumbnail();?>
+						</div>
 
+						<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-					<h2 class="headingTopThree"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-					<p> <?php the_excerpt(); ?></p>
+						<div class="col-12"> 
+							<?php the_excerpt(); ?>
+						</div>
+					</div>
 		
 				<?php }
 
