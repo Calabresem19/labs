@@ -13,21 +13,20 @@
 	<body>
 
 	<div class = "container-fluid">
+			<header class = "site-header row">
+				<div class="offset-1 col-1">
+					<a href="<?php echo get_home_url(); ?>"><img class="logo " src="<?php echo get_template_directory_uri() ?>/static/images/WillowbrookLabsLogoSmall.gif"></a>
+				</div>
+				<nav class="nav-menu col-md-5 col-lg-4  offset-md-5 offset-lg-6">
+					<?php
 
-	<header class = "site-header">
-			<img class="logo offset-1" src="<?php echo get_template_directory_uri() ?>/static/images/WillowbrookLabsLogoSmall.gif">
+					$args = array(
+						'theme_location' => 'primary'
+					);
+					
+					?>
+			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
-			<nav class="nav-menu col-3 offset-5">
-				<?php
+				</nav>
 
-				$args = array(
-					'theme_location' => 'primary'
-				);
-				
-				?>
-		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-
-			</nav>
-
-		</header>
-	
+			</header>

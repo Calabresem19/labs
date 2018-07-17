@@ -30,6 +30,7 @@ Version: 1.0
 	list-style-type: none;
 	color: white;
 	font-family: Helvetica;
+	padding-left: 10px;
 }
 
 div.contact-box {
