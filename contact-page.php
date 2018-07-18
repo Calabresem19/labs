@@ -4,6 +4,9 @@
 <?php
 
 	get_header();
+
+
+
 ?>
 <div id="contact-header" class="row">
 	<h1 class="center-block"> Contact Us</h1>
@@ -18,9 +21,10 @@
 		</div>
 		<div class="row">
 
-			<form action="#" method="post" id="form1" class="col-12">
+			<form action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post" id="form1" class="col-12">
 				<div class="row">
 					<div class="col-5">
+						<input type="hidden" name="action" value="contact_form">
 						<div id="name-div" class="form-divs">
 							<label class="col-3 ">Name:</label>
 							<input class="col-6 "type="text" name="Name"><br>
