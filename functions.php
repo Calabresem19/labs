@@ -38,16 +38,29 @@ function sendContactEmail(){
 
 }
 function prefix_send_email_to_admin() {
-    /**
-     * At this point, $_GET/$_POST variable are available
-     *
-     * We can do our normal processing here
-     */ 
+//	print phpinfo();
 
-    // Sanitize the POST field
-    // Generate email content
-    // Send to appropriate email
-	wp_redirect("http://192.168.0.13/index.php/blog/");
+	$msg = "Name: " .$_POST['Name'] ."\n"
+		."Email: " .$_POST['Email'] ."\n"
+		."Phone Number: " .$_POST['PhoneNumber'] ."\n"
+		."Message: " .$_POST['Message'] ;
+
+	$headers = 'From: webmaster@example.com' ;
+
+
+	ini_set('display_errors',1);
+
+
+	$success = mail('mikeclbrs@gmail.com', 'Lead', $msg, $headers, "-t");
+//	$success = mail('mikeclbrs@gmail.com', 'Lead', $msg );
+
+	if (!$success) {
+	    $errorMessage = error_get_last()['message'];
+		echo($errorMessage);	
+	}
+	
+	echo($success );
+//	wp_redirect(site_url());
 }
 
 
