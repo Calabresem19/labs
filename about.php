@@ -29,11 +29,9 @@
 
 	</div>
 
-	<div>
+	<div id="about-paragraph2" class="row offset-1 col-10">
 		<h1> What to Expect </h1>	
-
-
-		<p> At Willowbrook Labs we will commit ourselves fully to creating your product and developing it to its full potential. We pride ourselves on transparency and trustworthiness. Strong ethics help guide us through the thick and the thin. This commitment to excellence is the bedrock foundation on how we treat our customers, employees ,and community members. </p>
+		<p> At Willowbrook Labs we will commit ourselves fully to creating your product and developing it to its full potential. We pride ourselves on transparency and trustworthiness. Strong ethics help guide us through the thick and the thin. This commitment to excellence is the bedrock foundation on how we treat our customers, employees, and community members. </p>
 	</div>
 
 	<div class="row offset-1 col-10" >

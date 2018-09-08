@@ -26,12 +26,13 @@
 
 					if ($post_query->current_post == 0){ ?>
 						<div class="row">					
-							<div class=" center-block ">
-								<?php set_post_thumbnail_size( 250, 250 ); 
-								the_post_thumbnail();?>
-							</div>
 
 							<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+							<div class=" center-block "><a href="<?php the_permalink(); ?>">
+								<?php set_post_thumbnail_size( 250, 250 ); 
+								the_post_thumbnail();?>
+							</a></div>
+
 
 							<div class="col-10 offset-1"> 
 								<?php the_excerpt(); ?>
@@ -63,12 +64,12 @@
 
 								if ($post_query->current_post == 1){ ?>
 								<div class="row">					
-										<div class=" center-block ">
+									<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+										<div class=" center-block "><a href="<?php the_permalink(); ?>">
 											<?php set_post_thumbnail_size( 250, 250 ); 
 											the_post_thumbnail();?>
-										</div>
+										</a></div>
 
-									<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 									<div class="col-10 offset-1"> 
 										<?php the_excerpt(); ?>
@@ -102,12 +103,14 @@
 
 								if ($post_query->current_post == 2){ ?>
 								<div class="row">					
-										<div class=" center-block ">
-											<?php set_post_thumbnail_size( 250, 250 ); 
-											the_post_thumbnail();?>
-										</div>
 
 									<h2 class="headingTopThree col-12 text-center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+										<div class=" center-block "><a href="<?php the_permalink(); ?>">
+
+											<?php set_post_thumbnail_size( 250, 250 ); 
+											the_post_thumbnail();?>
+										</a></div>
+
 
 									<div class="col-10 offset-1"> 
 										<?php the_excerpt(); ?>
@@ -165,7 +168,6 @@
 		?>
 
 </div>
-
 
 
 

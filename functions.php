@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -29,9 +28,6 @@ function custom_excerpt_length( $length ) {
         return 30;
     }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-
-
 
 function sendContactEmail(){
 	echo("test");
@@ -64,8 +60,5 @@ function prefix_send_email_to_admin() {
 }
 
 
-
 add_action( 'admin_post_nopriv_contact_form', 'prefix_send_email_to_admin' );
 add_action( 'admin_post_contact_form', 'prefix_send_email_to_admin' );
-
-?>
