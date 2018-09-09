@@ -392,7 +392,11 @@ div#about-paragraph2{
 	font-size: 25px;
 }
 
+div#article img {
+	max-width: 100% ;
+	height: auto;
 
+}
 
 /* {
 	border : dotted;

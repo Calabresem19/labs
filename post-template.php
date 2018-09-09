@@ -14,11 +14,13 @@
 
 		<hr>
 		<?php
-		if ( has_post_thumbnail() ) {
+		if ( has_post_thumbnail() ) { ?>
+			<div class="center-block">
+			<?php
 			set_post_thumbnail_size( 1200, 1200); 
 			the_post_thumbnail();
 		} ?>
-
+		</div>
 
 		<?php the_content();?>
 		<?php endwhile; ?>
